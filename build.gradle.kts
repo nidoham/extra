@@ -1,5 +1,9 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+// Top-level build.gradle.kts
 plugins {
-    alias(libs.plugins.android.application) apply false
+    // Android + Kotlin (সব মডিউলে শেয়ার হবে)
     alias(libs.plugins.kotlin.android) apply false
+    alias(libs.plugins.android.library) apply false
+
+    // Maven Publish (GitHub / Maven Central এর জন্য)
+    id("com.vanniktech.maven.publish") version "0.35.0" apply false
 }
