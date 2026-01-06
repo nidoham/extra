@@ -1,5 +1,6 @@
 [versions]
 agp = "8.13.2"
+firebaseBom = "34.7.0"
 kotlin = "2.3.0"
 junit = "4.13.2"
 androidx-test-runner = "1.7.0"
@@ -11,6 +12,15 @@ coreKtx = "1.17.0"
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 
 # Testing only
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-config = { module = "com.google.firebase:firebase-config" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
+firebase-database = { module = "com.google.firebase:firebase-database" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore" }
+firebase-messaging = { module = "com.google.firebase:firebase-messaging" }
+firebase-storage = { module = "com.google.firebase:firebase-storage" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 runner = { group = "androidx.test", name = "runner", version.ref = "androidx-test-runner" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCoreVersion" }

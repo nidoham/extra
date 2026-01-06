@@ -6,4 +6,5 @@ plugins {
 
     // Maven Publish (GitHub / Maven Central এর জন্য)
     id("com.vanniktech.maven.publish") version "0.35.0" apply false
+    id("com.google.gms.google-services") version "4.4.4" apply false
 }
